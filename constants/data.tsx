@@ -50,7 +50,7 @@ const userData = {
     ],
     about: {
       title:
-        "I'm a software developer that loves building products and web applications that impact millions of lives",
+        "I'm a software application engineer that loves building products and web applications that impact millions of lives",
       description: [
         `I've been developing full-stack application since I was 10 years old. I didn't know what full-stack meant at that time because the term was not coined back then. I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
         `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
@@ -106,12 +106,12 @@ const userData = {
     resumeUrl:
       "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
     socialLinks: {
-      instagram: "https://instagram.com/maninthere",
-      twitter: "https://twitter.com/mannupaaji",
-      linkedin: "https://linkedin.com/in/manuarora28",
-      github: "https://github.com/manuarora700",
-      facebook: "https://facebook.com/",
-      peerlist: "https://peerlist.io/manuarora",
+      instagram: "https://instagram.com/_azbanov_",
+      twitter: "https://twitter.com/_azbanov_",
+      linkedin: "https://linkedin.com/in/azbanov",
+      github: "https://github.com/azbanov",
+      facebook: "https://facebook.com/azamat.kurbanov1",
+      peerlist: "https://peerlist.io/azbanov",
     },
   };
   

@@ -19,12 +19,12 @@ export default function Hero() {
           </RainbowHighlight>
           <RainbowHighlight color={colors[1]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-              Designer.
+              Programmer.
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[2]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
-              Programmer.
+              Bibliophile.
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[3]}>
@@ -44,6 +44,7 @@ export default function Hero() {
             height={0}
             sizes='100vw'
             style={{ width: '100%', height: '100%' }}
+            className='bg-blue-300'
           />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
