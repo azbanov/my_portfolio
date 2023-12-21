@@ -3,9 +3,9 @@ import ContainerBlock from "@/components/ContainerBlock";
 import Projects from "@/components/Projects";
 
 export default function projects() {
-    return (
-        <ContainerBlock title="Projects - Azamat Kurbanov">
-            <Projects />
-        </ContainerBlock>
-    );
+  return (
+    <ContainerBlock title="Projects - Azamat Kurbanov">
+      <Projects />
+    </ContainerBlock>
+  );
 }

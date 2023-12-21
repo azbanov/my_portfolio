@@ -5,17 +5,17 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default function ContainerBlock({ children, ...customMeta }: any) {
-    const router = useRouter();
-    const meta = {
-        title: "Azamat Kurbanov - Software Application Engineer",
-        description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
-        image: "/avatar.png",
-        type: "website",
-        ...customMeta,
-    };
+  const router = useRouter();
+  const meta = {
+    title: "Azamat Kurbanov - Software Application Engineer",
+    description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
+    image: "/avatar.png",
+    type: "website",
+    ...customMeta,
+  };
 
-    return (
-        <div>
+  return (
+    <div>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -48,5 +48,5 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <Footer />
       </main>
     </div>
-    );
+  );
 }
