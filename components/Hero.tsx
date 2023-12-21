@@ -1,6 +1,6 @@
 import React from 'react';
 import userData from '@/constants/data';
-import { RoughNotationGroup, RoughNotation } from 'react-rough-notation'
+import { RoughNotationGroup } from 'react-rough-notation'
 import { RainbowHighlight } from './RainbowHighlight';
 import Image from 'next/image';
 
