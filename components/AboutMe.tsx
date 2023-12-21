@@ -1,6 +1,7 @@
 import React from "react";
 import userData from "@/constants/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutMe() {
     return (
@@ -36,12 +37,12 @@ export default function AboutMe() {
                             </h1>
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                                 For any sort help / enquiry, shoot a{" "}
-                                <a
+                                <Link
                                     href={`mailto:${userData.email}`}
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
                                     mail
-                                </a>{" "}
+                                </Link>{" "}
                                 and I&apos;ll get back. I swear.
                             </p>
                         </div>
@@ -52,13 +53,13 @@ export default function AboutMe() {
                             <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                                 I&apos;m looking for a job currently, If you see me as a good fit,
                                 check my{" "}
-                                <a
+                                <Link
                                     href={userData.resumeUrl}
                                     target="__blank"
                                     className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                                 >
                                     CV
-                                </a>{" "}
+                                </Link>{" "}
                                 and I&apos;d love to work for you.
                             </p>
                         </div>
@@ -68,7 +69,7 @@ export default function AboutMe() {
                         </h1>
                         <div className="mt-4 ml-4">
                             <div className="flex flex-row justify-start items-center ">
-                                <a
+                                <Link
                                     href={userData.socialLinks.peerlist}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -77,10 +78,10 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                                         Peerlist
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex flex-row justify-start items-center ">
-                                <a
+                                <Link
                                     href={userData.socialLinks.facebook}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -89,10 +90,10 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                                         Facebook
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex flex-row justify-start items-center">
-                                <a
+                                <Link
                                     href={userData.socialLinks.twitter}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -101,10 +102,10 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                                         Twitter
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex flex-row justify-start items-center">
-                                <a
+                                <Link
                                     href={userData.socialLinks.github}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -113,10 +114,10 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                                         GitHub
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex flex-row justify-start items-center">
-                                <a
+                                <Link
                                     href={userData.socialLinks.linkedin}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -125,10 +126,10 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                                         LinkedIn
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="flex flex-row justify-start items-center">
-                                <a
+                                <Link
                                     href={userData.socialLinks.instagram}
                                     className="flex flex-row items-center space-x-4 group"
                                 >
@@ -137,7 +138,7 @@ export default function AboutMe() {
                                         <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
                                         Instagram
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -155,59 +156,90 @@ export default function AboutMe() {
                         <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
                             Tech Stack
                         </h1>
-                        <div className="flex flex-row flex-wrap mt-8">
+                        <div className="flex flex-row flex-wrap mt-8 relative">
                             <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                                className="h-20 w-20 mx-4 my-4"
+                                className="h-20 w-20 mx-4 my-4 flex"
                                 alt="javascript"
-                                width={0}
-                                height={0}
-                                sizes='100vw'
-                                style={{ width: '100%', height: 'auto' }}
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                                className="h-20 w-20 mx-4 my-4"
+                                className="h-20 w-20 mx-4 my-4 flex"
+                                alt="java"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="typescript"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="html"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="css"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="angular"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="vue"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="git"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="react"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="firebase"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="mysql"
+                                width={100}
+                                height={100}
                             />
-                            <img
+                            <Image
                                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                                 className="h-20 w-20 mx-4 my-4"
+                                alt="mongodb"
+                                width={100}
+                                height={100}
                             />
                         </div>
                     </div>
