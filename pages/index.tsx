@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <ContainerBlock
       title="Azamat Kurbanov - Software Application Engineer"
-      description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
+      description="My own professional portfolio."
     >
       <Hero />
       <FavouriteProjects />
