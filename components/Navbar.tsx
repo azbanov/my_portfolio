@@ -31,8 +31,8 @@ export default function Navbar() {
           <Link
             href="/about"
             className={`text-base  ${router.asPath === "/about"
-              ? "text-gray-800 font-bold dark:text-gray-400"
-              : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
           >
             About{" "}
@@ -55,8 +55,8 @@ export default function Navbar() {
           <Link
             href="/projects"
             className={`text-base  ${router.asPath === "/projects"
-              ? "text-gray-800 font-bold dark:text-gray-400"
-              : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
           >
             Projects
@@ -79,8 +79,8 @@ export default function Navbar() {
           <Link
             href="/experience"
             className={`text-base  ${router.asPath === "/experience"
-              ? "text-gray-800 font-bold dark:text-gray-400"
-              : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
           >
             Experience{" "}
@@ -103,8 +103,8 @@ export default function Navbar() {
           <Link
             href="/contact"
             className={`text-base  ${router.asPath === "/contact"
-              ? "text-gray-800 font-bold dark:text-gray-400"
-              : "text-gray-600 dark:text-gray-300 font-normal "
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
           >
             Contact
