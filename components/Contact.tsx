@@ -10,7 +10,7 @@ export default function Contact() {
           Contact
         </h1>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
+      <div className="rounded-md shadow-md bg-blue-300 dark:bg-blue-500 p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header className="">
@@ -22,31 +22,33 @@ export default function Contact() {
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
+              <Link
+                href={userData.socialLinks.telegramm}
+                className="flex flex-row items-center space-x-6 rounded-md border border-blue-300 dark:border-blue-500 hover:border hover:border-blue-500 dark:hover:border-blue-300 p-4"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-telephone-fill h-4 w-4 text-blue-500"
-                  viewBox="0 0 16 16"
+                  className="bi bi-envelope-fill h-5 w-5 text-blue-500 dark:text-blue-300"
+                  viewBox="0 0 30 30"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                  />
+                  <path d="M25.1543,3.98438c-0.32506,0.01434 -0.62791,0.10902 -0.89453,0.2168c-0.24975,0.10046 -1.204,0.50974 -2.70703,1.1543c-1.50434,0.64512 -3.49626,1.50031 -5.62109,2.41406c-4.24968,1.8275 -9.02743,3.88464 -11.47461,4.9375c-0.09202,0.03958 -0.41311,0.14215 -0.75391,0.4082c-0.3408,0.26605 -0.70312,0.81735 -0.70312,1.43164c0,0.49534 0.23607,0.98744 0.5332,1.28125c0.29714,0.29381 0.61154,0.43894 0.88086,0.54883c0.97717,0.39871 4.00778,1.63891 4.58008,1.87305c0.20141,0.61698 1.29835,3.97253 1.55273,4.79492c0.16769,0.5427 0.32732,0.8826 0.53516,1.15234c0.10392,0.13487 0.22471,0.25307 0.37109,0.3457c0.05851,0.03702 0.12266,0.06554 0.1875,0.0918l0.00391,0.00195c0.01494,0.006 0.02782,0.01618 0.04297,0.02148c0.02858,0.01 0.0477,0.0112 0.08594,0.01953c0.15232,0.04919 0.30611,0.08008 0.44336,0.08008c0.58516,0 0.94336,-0.32227 0.94336,-0.32227l0.02149,-0.01562l3.00977,-2.60352l3.65039,3.45313c0.0514,0.07268 0.53074,0.73047 1.58789,0.73047c0.6277,0 1.12563,-0.31497 1.44531,-0.65039c0.31968,-0.33542 0.51885,-0.6878 0.60352,-1.13086v-0.00195c0.07919,-0.41867 3.44336,-17.68945 3.44336,-17.68945l-0.00586,0.02344c0.09848,-0.44951 0.12429,-0.86814 0.01563,-1.28125c-0.10867,-0.41311 -0.39499,-0.80864 -0.75,-1.02148c-0.35497,-0.2128 -0.70229,-0.27801 -1.02734,-0.26367zM24.9668,6.07422c-0.0048,0.02919 0.00359,0.01451 -0.00391,0.04883l-0.00195,0.01172l-0.00195,0.01172c0,0 -3.3225,17.04989 -3.44531,17.69922c0.00899,-0.04904 -0.0321,0.04846 -0.07422,0.10742c-0.05955,-0.04105 -0.18164,-0.09375 -0.18164,-0.09375l-0.01953,-0.02148l-4.98633,-4.7168l-3.52539,3.04688l1.04883,-4.19922c0,0 6.55617,-6.78664 6.95117,-7.18164c0.318,-0.316 0.38477,-0.42616 0.38477,-0.53516c0,-0.146 -0.07609,-0.25195 -0.24609,-0.25195c-0.153,0 -0.35875,0.14875 -0.46875,0.21875c-1.4331,0.91354 -7.72466,4.58039 -10.54492,6.2207c-0.44819,-0.18342 -3.5619,-1.45798 -4.61719,-1.88867c0.00799,-0.0035 0.00536,-0.00226 0.01367,-0.00586c2.44782,-1.05314 7.22358,-3.11026 11.47266,-4.9375c2.12454,-0.91362 4.11797,-1.76946 5.62109,-2.41406c1.47998,-0.63467 2.50833,-1.07147 2.625,-1.11914z"></path>
                 </svg>
-                <p className="text-gray-50 font-light text-sm">
-                  {userData.phone}
+                <p className="text-gray-50 font-light text-sm !ml-5">
+                  {userData.telegrammUsername}
                 </p>
-              </div>
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
+              </Link>
+              <Link
+                href={`mailto:${userData.email}`}
+                className="flex flex-row items-center space-x-6 rounded-md border border-blue-300 dark:border-blue-500 hover:border hover:border-blue-500 dark:hover:border-blue-300 p-4"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-envelope-fill h-4 w-4 text-blue-500"
+                  className="bi bi-envelope-fill h-4 w-4 text-blue-500 dark:text-blue-300"
                   viewBox="0 0 16 16"
                 >
                   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
@@ -54,14 +56,17 @@ export default function Contact() {
                 <p className="text-gray-50 font-light text-sm">
                   {userData.email}
                 </p>
-              </div>
-              <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
+              </Link>
+              <Link
+                href={userData.addressMapPoint}
+                className="flex flex-row items-center space-x-6 rounded-md border border-blue-300 dark:border-blue-500 hover:border hover:border-blue-500 dark:hover:border-blue-300 p-4"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  className="bi bi-pin-fill h-4 w-4 text-blue-500"
+                  className="bi bi-pin-fill h-4 w-4 text-blue-500 dark:text-blue-300"
                   viewBox="0 0 16 16"
                 >
                   <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z" />
@@ -69,12 +74,12 @@ export default function Contact() {
                 <p className="text-gray-50 font-light text-sm">
                   {userData.address}
                 </p>
-              </div>
+              </Link>
             </div>
             <div className="social-icons flex flex-row space-x-8">
               <Link
                 href={userData.socialLinks.facebook}
-                className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full hover:bg-blue-500 dark:hover:bg-blue-300 flex items-center justify-center cursor-pointer"
               >
                 <svg
                   width="24"
@@ -92,7 +97,7 @@ export default function Contact() {
               </Link>
               <Link
                 href={userData.socialLinks.twitter}
-                className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full hover:bg-blue-500 dark:hover:bg-blue-300 flex items-center justify-center cursor-pointer"
               >
                 <svg
                   width="24"
@@ -112,7 +117,7 @@ export default function Contact() {
               </Link>
               <Link
                 href={userData.socialLinks.instagram}
-                className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full hover:bg-blue-500 dark:hover:bg-blue-300 flex items-center justify-center cursor-pointer"
               >
                 <svg
                   width="24"

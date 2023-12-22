@@ -4,8 +4,9 @@ const userData = {
     designation: "Software Application Engineer",
     avatarUrl: "/avatar.png",
     email: "azik1kurbanov@gmail.com",
-    phone: "+420 776833889",
+    telegrammUsername: "@azbanov",
     address: "Prague, Czechia",
+    addressMapPoint: "https://maps.app.goo.gl/4HV5RZ5nxATrs6Ar9",
     projects: [
       {
         title: "Tailwind Master Kit",
@@ -112,6 +113,7 @@ const userData = {
       github: "https://github.com/azbanov",
       facebook: "https://facebook.com/azamat.kurbanov1",
       peerlist: "https://peerlist.io/azbanov",
+      telegramm: "https://t.me/azbanov"
     },
   };
   
