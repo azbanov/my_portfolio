@@ -1,8 +1,26 @@
 import React from "react";
 import userData from "@/constants/data";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import { sendEmail } from "@/utils/send-email";
+
+export type FormData ={
+  name: string;
+  email: string;
+  message: string;
+};
 
 export default function Contact() {
+  const { register, handleSubmit, reset } = useForm<FormData>();
+
+  function onSubmit(data: FormData) {
+    sendEmail(data).then((res) => {
+      if ('message' in res) {
+        reset()
+      }
+    })
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -147,23 +165,22 @@ export default function Contact() {
               </Link>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
+          <form id="contact_me" onSubmit={handleSubmit(onSubmit)} className="form rounded-lg bg-white p-4 flex flex-col">
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
               Your Name
             </label>
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="name"
+              {...register('name', { required: true })}
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
               Email
             </label>
             <input
-              type="text"
+              type="email"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="email"
+              {...register('email', { required: true })}
             />
             <label
               htmlFor="message"
@@ -173,8 +190,9 @@ export default function Contact() {
             </label>
             <textarea
               rows={4}
+              placeholder="Type your message"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="message"
+              {...register('message', { required: true })}
             />
             <button
               type="submit"
