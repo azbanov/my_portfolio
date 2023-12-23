@@ -4,6 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutMe() {
+  const handleClick = async () => {
+    const res = await fetch('/api/resume');
+
+    if (res.status == 200) {
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'Azamat_Kurbanov.pdf';
+      link.click();
+    } else {
+      console.error(res.status, res.statusText);
+      alert('Error occured pls contact me: azik1kurbanov@gmail.com');
+    }
+  };
+
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -17,9 +33,9 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}. Currently working on{" "}
+            {userData.about.title}. Currently working for{" "}
             <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
+              className="bg-purple-900 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
               {userData.about.currentProject} ✈️
@@ -51,15 +67,15 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I&apos;m looking for a job currently, If you see me as a good fit,
+                I&apos;m passively looking for a job currently, If you see me as a good fit,
                 check my{" "}
-                <Link
-                  href={userData.resumeUrl}
-                  target="__blank"
+                <button
+                  type="button"
+                  onClick={handleClick}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   CV
-                </Link>{" "}
+                </button>{" "}
                 and I&apos;d love to work for you.
               </p>
             </div>
@@ -158,23 +174,30 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8 relative">
               <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
+                className="h-20 w-20 mx-4 my-4 flex"
+                alt="python"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/elixir/elixir.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="elixir"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="php"
+                width={100}
+                height={100}
+              />
+              <Image
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4 flex"
                 alt="javascript"
-                width={100}
-                height={100}
-              />
-              <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                className="h-20 w-20 mx-4 my-4 flex"
-                alt="java"
-                width={100}
-                height={100}
-              />
-              <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
-                alt="typescript"
                 width={100}
                 height={100}
               />
@@ -193,16 +216,23 @@ export default function AboutMe() {
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"
                 className="h-20 w-20 mx-4 my-4"
-                alt="angular"
+                alt="django"
                 width={100}
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                src="/phoenix-framework.png"
                 className="h-20 w-20 mx-4 my-4"
-                alt="vue"
+                alt="phoenix framework"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/symfony/symfony.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="symfony"
                 width={100}
                 height={100}
               />
@@ -214,16 +244,16 @@ export default function AboutMe() {
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"
                 className="h-20 w-20 mx-4 my-4"
-                alt="react"
+                alt="docker"
                 width={100}
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
                 className="h-20 w-20 mx-4 my-4"
-                alt="firebase"
+                alt="postgresql"
                 width={100}
                 height={100}
               />
@@ -238,6 +268,34 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                 className="h-20 w-20 mx-4 my-4"
                 alt="mongodb"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/rabbitmq.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="rabbitmq"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="aws"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="tailwind"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redis/redis.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="redis"
                 width={100}
                 height={100}
               />

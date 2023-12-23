@@ -37,13 +37,13 @@ export default function FavouriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <Link
-            href="https://tailwindmasterkit.com"
+            href="https://www.currys.co.uk"
             className="w-full block col-span-3 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <Image
-                src="/tmk.jpg"
-                alt="portfolio"
+                src="/currys.png"
+                alt="currys"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
                 width={0}
                 height={0}
@@ -51,22 +51,22 @@ export default function FavouriteProjects() {
                 style={{ width: '100%', height: 'auto' }}
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Tailwind Master Kit
+                Currys
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
                 01
               </h1>
             </div>
           </Link>
           {/* Single card */}
           <Link
-            href="https://placeholdertech.in"
+            href="https://patrondeti.cz/"
             className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <Image
-                src="/placeholdertech.png"
-                alt="portfolio"
+                src="/patrondeti.png"
+                alt="patrondeti"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
                 width={0}
                 height={0}
@@ -74,22 +74,22 @@ export default function FavouriteProjects() {
                 style={{ width: '100%', height: 'auto' }}
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                PlaceholderTech
+                Nadace Sirius
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
                 02
               </h1>
             </div>
           </Link>
           {/* Single card */}
           <Link
-            href="https://azbanov.pro"
+            href="https://www.alpiq.com"
             className="w-full block col-span-3 sm:col-span-1  object-cover"
           >
             <div className="relative overflow-hidden shadow-2xl">
               <Image
-                src="/portfolio.png"
-                alt="portfolio"
+                src="/alpiq.png"
+                alt="alpiq"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
                 width={0}
                 height={0}
@@ -97,9 +97,9 @@ export default function FavouriteProjects() {
                 style={{ width: '100%', height: 'auto' }}
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Portfolio
+                Alpiq
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
                 03
               </h1>
             </div>
