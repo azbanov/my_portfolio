@@ -35,10 +35,10 @@ export default function AboutMe() {
           >
             {userData.about.title}. Currently working for{" "}
             <a
-              className="bg-purple-900 rounded-md px-2 py-1 text-white"
+              className="bg-blue-700 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
-              {userData.about.currentProject} 🛒
+              {userData.about.currentProject}
             </a>
           </p>
         </div>
@@ -144,18 +144,6 @@ export default function AboutMe() {
                   </div>
                 </Link>
               </div>
-              <div className="flex flex-row justify-start items-center ">
-                <Link
-                  href={userData.socialLinks.peerlist}
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Peerlist
-                  </div>
-                </Link>
-              </div>
             </div>
           </div>
           {/* Text area */}
@@ -174,16 +162,16 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8 relative">
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
-                className="h-20 w-20 mx-4 my-4 flex"
-                alt="python"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/elixir/elixir.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="elixir"
                 width={100}
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/elixir/elixir.png"
-                className="h-20 w-20 mx-4 my-4"
-                alt="elixir"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
+                className="h-20 w-20 mx-4 my-4 flex"
+                alt="python"
                 width={100}
                 height={100}
               />
@@ -216,16 +204,30 @@ export default function AboutMe() {
                 height={100}
               />
               <Image
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"
+                src="/phoenix-framework.png"
                 className="h-20 w-20 mx-4 my-4"
-                alt="django"
+                alt="phoenix framework"
                 width={100}
                 height={100}
               />
               <Image
-                src="/phoenix-framework.png"
+                src="/oban.svg"
                 className="h-20 w-20 mx-4 my-4"
-                alt="phoenix framework"
+                alt="oban"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="/drupal.svg"
+                className="h-20 w-20 mx-4 my-4"
+                alt="drupal"
+                width={100}
+                height={100}
+              />
+              <Image
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="django"
                 width={100}
                 height={100}
               />

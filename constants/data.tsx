@@ -14,6 +14,11 @@ const userData = {
         imgUrl: "/portfolio.png",
       },
       {
+        title: "Yolo Group",
+        link: "https://yolo.group",
+        imgUrl: "/yolo.png",
+      },
+      {
         title: "Currys",
         link: "https://www.currys.co.uk",
         imgUrl: "/currys.png",
@@ -48,14 +53,21 @@ const userData = {
       title:
         "I'm a software application engineer that loves building products and web applications that impact millions of lives",
       description: [
-        `As a Software Application Engineer, I apply my 10+ years of development experience to deliver high-quality order management solutions for the projects. I enjoy working with a variety of technologies, such as Elixir, PHP, and Python, to create scalable, reliable, and efficient software systems that meet the needs of millions of customers.`,
+        `As a Software Application Engineer, I apply my 12+ years of development experience to deliver high-quality order management solutions for the projects. I enjoy working with a variety of technologies, such as Elixir, Python, and PHP, to create scalable, reliable, and efficient software systems that meet the needs of millions of customers.`,
         `My passion for development stems from my curiosity and creativity, as I love to explore complex challenges and craft elegant solutions. Throughout my career, I have worked on diverse projects across different domains, such as e-mobility, media, e-commerce, fintech, and charity.`, 
         `I have also demonstrated my ability to conduct thorough analysis, design robust architectures, ensure code quality, and perform rigorous testing. I am always eager to learn new skills, embrace new technologies, and collaborate with others to achieve shared goals.`,
       ],
-      currentProject: "Currys PLC",
-      currentProjectUrl: "https://www.currys.co.uk",
+      currentProject: "Yolo Group",
+      currentProjectUrl: "https://yolo.group",
     },
     experience: [
+      {
+        title: "Senior Software Development Engineer",
+        company: "Yolo Group",
+        year: "2024",
+        companyLink: "https://yolo.group",
+        desc: "Develop and maintain robust, scalable backend applications with Elixir, ensuring high performance and reliability. Work closely with cross-functional teams to translate business requirements into technical solutions. Optimize system performance for speed and scalability while implementing secure integrations with third-party APIs.",
+      },
       {
         title: "Senior Software Engineer",
         company: "Currys PLC",
@@ -142,7 +154,6 @@ const userData = {
       linkedin: "https://linkedin.com/in/azbanov",
       github: "https://github.com/azbanov",
       facebook: "https://facebook.com/azamat.kurbanov1",
-      peerlist: "https://peerlist.io/azbanov",
       telegramm: "https://t.me/azbanov"
     },
   };
