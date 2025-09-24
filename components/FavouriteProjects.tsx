@@ -37,8 +37,31 @@ export default function FavouriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <Link
-            href="https://www.currys.co.uk"
+            href="https://yolo.group"
             className="w-full block col-span-3 shadow-2xl"
+          >
+            <div className="relative overflow-hidden">
+              <Image
+                src="/yolo.png"
+                alt="Yolo Group"
+                className="transform hover:scale-125 transition duration-2000 ease-out"
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{ width: '100%', height: 'auto' }}
+              />
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                Yolo Group
+              </h1>
+              <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
+                01
+              </h1>
+            </div>
+          </Link>
+          {/* Single card */}
+          <Link
+            href="https://www.currys.co.uk"
+            className="w-full block col-span-3  sm:col-span-1 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <Image
@@ -54,16 +77,16 @@ export default function FavouriteProjects() {
                 Currys
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
-                01
+                02
               </h1>
             </div>
           </Link>
           {/* Single card */}
           <Link
             href="https://patrondeti.cz/"
-            className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
+            className="w-full block col-span-3  sm:col-span-1 object-cover"
           >
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden shadow-2xl">
               <Image
                 src="/patrondeti.png"
                 alt="patrondeti"
@@ -77,7 +100,7 @@ export default function FavouriteProjects() {
                 Nadace Sirius
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
-                02
+                03
               </h1>
             </div>
           </Link>
@@ -100,7 +123,7 @@ export default function FavouriteProjects() {
                 Alpiq
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-300 font-bold text-xl">
-                03
+                04
               </h1>
             </div>
           </Link>
