@@ -1,11 +1,11 @@
-import React from 'react';
-import userData from '@/constants/data';
-import { RoughNotationGroup } from 'react-rough-notation'
-import { RainbowHighlight } from './RainbowHighlight';
-import Image from 'next/image';
+import React from "react";
+import userData from "@/constants/data";
+import { RoughNotationGroup } from "react-rough-notation";
+import { RainbowHighlight } from "./RainbowHighlight";
+import Image from "next/image";
 
 export default function Hero() {
-  const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
+  const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6", "#EF4444"];
   return (
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
@@ -44,12 +44,12 @@ export default function Hero() {
         <div className="w-3/4 ">
           <Image
             src={userData.avatarUrl}
-            alt='avatar'
+            alt="avatar"
             width={0}
             height={0}
-            sizes='100vw'
-            style={{ width: '100%', height: '100%' }}
-            className='bg-blue-300'
+            sizes="100vw"
+            style={{ width: "100%", height: "100%" }}
+            className="bg-blue-300"
           />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
